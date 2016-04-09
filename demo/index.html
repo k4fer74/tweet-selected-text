@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="../dist/tweet-selected-text.min.css">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="ribbon.css">
+
+	<title>Tweet Selected Text</title>
+
+</head>
+<body>
+
+	<div class="ribbon left black">
+		<a href="https://github.com/username/repo">Fork me on GitHub</a>
+	</div>
+
+	<header>
+
+		<div class="container">
+
+			<h1>Tweet selected text</h1>
+
+		</div>
+
+	</header>
+
+	<nav>
+		<div class="container">
+			<a href="#example">Example</a>
+			<a href="#install">Install</a>
+			<a href="" class="right">View on GitHub</a>
+		</div>
+	</nav>
+
+	<div class="container">
+
+		<h2 id="example">Example</h2>
+		<h3>Select a text below to tweet on Twitter</h3>
+		
+	</div>
+
+	<section class="container content">
+
+		<p>
+			Cras tempor elit eros, at finibus ex consectetur vitae. Donec tristique accumsan molestie. Nunc ornare diam quis enim consectetur venenatis. Proin in sapien consectetur, malesuada tellus sed, suscipit neque. Donec imperdiet neque pretium semper dictum.
+		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu ultrices ex, ut dictum sapien. Phasellus posuere dictum turpis id commodo. Sed varius est quis cursus pharetra. Suspendisse pharetra elit nibh, non ullamcorper erat eleifend sed.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu ultrices ex, ut dictum sapien. Phasellus posuere dictum turpis id commodo. Sed varius est quis cursus pharetra. Suspendisse pharetra elit nibh, non ullamcorper erat eleifend sed.
+		</p>
+
+	</section>
+
+	<section class="container how-to-use">
+
+		<h2 id="install">Install</h2>
+		<h3>Manually</h3>
+		<p>
+			In the head, add the <a href="">css</a>
+		</p>
+		<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/your/tweet-selected-text.css&quot;&gt;</code>
+
+		<p>
+			Before body tag closing, add the <a href="">javascript</a>
+		</p>
+		<code>&lt;script src=&quot;path/to/your/tweet-selected-text.min.js&quot;&gt;&lt;script&gt;</code>
+
+		<p>
+			Init the plugin
+		</p>
+		<code>
+			&lt;script&gt;
+				new SelectedText(['.class-content-block']);
+			&lt;/script&gt;
+		</code>
+
+		<h4>Note: you must pass the classes or id's to constructor as array</h4>
+		<code>
+			&lt;script&gt;
+				new SelectedText(['#id-content', '.class-posts']);
+			&lt;/script&gt;
+		</code>
+		<p>
+			Note: To pass a list of classes or IDS to the constructor, admitted that the texts within the respective elements can be shared
+		</p>
+
+	</section>
+
+	<footer>
+		<div class="container">
+			Made by <a href="http://www.github.com/matheuslugon">Matheus Lugon</a>
+		</div>
+	</footer>
+
+	<script src="../dist/share-selected-text.js"></script>
+
+	<script type="text/javascript">
+		new SelectedText(['.content']);
+	</script>
+
+</body>
+</html>
